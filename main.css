@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-inline: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  box-shadow: 0 0 5px dimgray;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  _margin: 0;
+  text-align: center;
+}
+
+button {
+  all: unset;
+  width: 150px;
+  margin-block: 2em;
+  padding: 1em;
+  background-color: dodgerblue;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 0 7px dimgray;
+  transition: background 0.5s;
+}
+
+button:hover {
+  background-color: navy;
+}
+
+ul {
+  max-width: 60%;
+  padding: 0;
+  list-style-type: none;
+}
+
+li ~ li {
+  margin-top: 1em;
+}
+
+li {
+  padding: 2em;
+  box-shadow: 0 0 7px dimgray;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 600;
+  line-height: 2em;
+}
+
+li span {
+  font-weight: normal;
+  font-style: italic;
+  color: dimgrey;
+}
